@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+	<div ng-app="myApp" ng-controller="myController">
+	  <ul>
+	      <li ng-repeat="item in produce  | orderBy:name">{{item}}</li>
+	  </ul>
+	  
+	  Add to List: <input type="text" ng-model="addToList"><!--  its give give a variable property in html -->
+	  <button ng-click="submitNumber(addToList)">Submit</button>
+	  
+	</div>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+	<script src="indexJS.js"></script>
+  </body>
+</html>
